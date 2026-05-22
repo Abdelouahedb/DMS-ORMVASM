@@ -1,12 +1,10 @@
-﻿# ORMVASM Document Manager
+# ORMVASM Document Manager
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=nextdotjs)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 ![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql&logoColor=white)
 ![Apache Solr](https://img.shields.io/badge/Apache%20Solr-Search-D9411E?logo=apachesolr&logoColor=white)
 ![Apache Tika](https://img.shields.io/badge/Apache%20Tika-Extraction-6B7280)
-
-![ORMVASM Document Manager animated banner](docs/visuals/readme-banner.svg)
 
 ORMVASM Document Manager is a secure web application for centralizing, encrypting, indexing, searching, viewing, and downloading administrative documents for the Office Regional de Mise en Valeur Agricole de Souss-Massa (ORMVA/SM).
 
@@ -49,21 +47,6 @@ The screenshots below were extracted from the provided SFE report and saved in `
 ### Solr Interface
 
 ![Solr query interface](docs/screenshots/solr-query.png)
-
-![Solr indexed document details](docs/screenshots/solr-details.png)
-
-
-## Animated Visuals
-
-These lightweight SVG diagrams are stored in `docs/visuals/` and use pure SVG animation so they can render directly on GitHub.
-
-![Architecture flow](docs/visuals/architecture-flow.svg)
-
-![Upload and indexing flow](docs/visuals/upload-indexing-flow.svg)
-
-![Role-based workflows](docs/visuals/role-workflows.svg)
-
-![Search pipeline](docs/visuals/search-pipeline.svg)
 
 ## Tech Stack
 
@@ -186,8 +169,7 @@ flowchart TD
 |-- components/admin/            # Admin dashboard components
 |-- docs/
 |   |-- database-schema.sql      # Inferred MySQL schema
-|   |-- screenshots/             # README screenshot assets
-|   `-- visuals/                 # Animated SVG diagrams
+|   `-- screenshots/             # README screenshot assets
 |-- lib/                         # MySQL and Solr clients
 |-- pages/                       # Pages Router views and API routes
 |-- public/                      # Logo and favicon
@@ -350,6 +332,3 @@ Administrator:
 ## Author and Internship Note
 
 Internship/SFE project by Boudrari Abdelouahed, completed in the context of a final-year internship at ORMVASM in Agadir during the 2024-2025 academic year. The report identifies the hosting office as the Service de Programmation et de la Planification (SPP).
-
-
-
