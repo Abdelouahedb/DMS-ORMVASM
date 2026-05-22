@@ -1,0 +1,58 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">ORMVASM Document Manager animated banner</title>
+  <desc id="desc">Animated document management banner showing secure files, indexing, and search.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f3d3e"/>
+      <stop offset="55%" stop-color="#155e63"/>
+      <stop offset="100%" stop-color="#f5f1e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#062b2d" flood-opacity="0.25"/>
+    </filter>
+    <style>
+      .title{font:700 48px Arial,Helvetica,sans-serif;fill:#ffffff;letter-spacing:0}
+      .subtitle{font:400 20px Arial,Helvetica,sans-serif;fill:#e9f6f4;letter-spacing:0}
+      .label{font:700 13px Arial,Helvetica,sans-serif;fill:#0f3d3e;letter-spacing:0}
+      .card{fill:#ffffff;stroke:#d7e8e3;stroke-width:2;filter:url(#shadow)}
+      .line{stroke:#93d1c3;stroke-width:4;stroke-linecap:round;stroke-dasharray:12 16}
+      .pulse{fill:#f2b84b}
+      .icon{fill:#155e63}
+    </style>
+  </defs>
+  <rect width="1200" height="320" rx="0" fill="url(#bg)"/>
+  <g opacity="0.18">
+    <path d="M0 250 C180 190 280 310 455 245 S760 190 940 235 1120 295 1200 240" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M0 70 C185 25 300 100 465 55 S745 30 920 70 1110 120 1200 78" fill="none" stroke="#ffffff" stroke-width="2"/>
+  </g>
+  <text x="72" y="118" class="title">ORMVASM Document Manager</text>
+  <text x="74" y="158" class="subtitle">Secure upload, encryption, indexing, and full-text search for administrative documents.</text>
+  <g transform="translate(665 72)">
+    <path class="line" d="M75 88 H240 H405">
+      <animate attributeName="stroke-dashoffset" values="0;-56" dur="2.2s" repeatCount="indefinite"/>
+    </path>
+    <g class="card">
+      <rect x="0" y="28" width="150" height="120" rx="8"/>
+    </g>
+    <path class="icon" d="M54 55h34l24 24v50H54z"/>
+    <path fill="#ffffff" d="M88 55v25h24z" opacity="0.9"/>
+    <rect x="69" y="101" width="45" height="8" rx="4" fill="#93d1c3"/>
+    <text x="38" y="172" class="label">UPLOAD</text>
+    <g class="card">
+      <rect x="190" y="28" width="150" height="120" rx="8"/>
+    </g>
+    <rect x="242" y="66" width="46" height="50" rx="8" class="icon"/>
+    <path d="M249 66v-14c0-18 32-18 32 0v14" fill="none" stroke="#155e63" stroke-width="10" stroke-linecap="round"/>
+    <text x="228" y="172" class="label">ENCRYPT</text>
+    <g class="card">
+      <rect x="380" y="28" width="150" height="120" rx="8"/>
+    </g>
+    <circle cx="446" cy="82" r="24" fill="none" stroke="#155e63" stroke-width="10"/>
+    <path d="M464 100l25 25" stroke="#155e63" stroke-width="10" stroke-linecap="round"/>
+    <text x="423" y="172" class="label">SEARCH</text>
+    <circle class="pulse" cx="75" cy="88" r="7">
+      <animate attributeName="cx" values="75;265;455;75" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

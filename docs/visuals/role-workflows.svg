@@ -1,0 +1,31 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Animated role-based workflows</title>
+  <desc id="desc">Role-based workflows for admin and standard users after authentication.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1d665f"/></marker>
+    <style>
+      .bg{fill:#fbfaf6}.title{font:700 23px Arial,Helvetica,sans-serif;fill:#123d3e}.lane{fill:#ffffff;stroke:#d5e4e1;stroke-width:2}.node{fill:#f1f8f6;stroke:#93c7bd;stroke-width:2}.node2{fill:#fff8ea;stroke:#e1bb63;stroke-width:2}.text{font:700 15px Arial,Helvetica,sans-serif;fill:#123d3e}.small{font:400 12px Arial,Helvetica,sans-serif;fill:#5a6f6d}.line{fill:none;stroke:#1d665f;stroke-width:3;marker-end:url(#arrow);stroke-dasharray:10 12}.dot{fill:#e1a83b}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="520"/>
+  <text class="title" x="60" y="58">Role-Based Workflows</text>
+  <g transform="translate(70 105)">
+    <rect class="lane" x="0" y="0" width="1060" height="140" rx="8"/>
+    <text class="title" x="28" y="40">Admin</text>
+    <rect class="node2" x="170" y="36" width="130" height="64" rx="8"/><text class="text" x="218" y="63">Login</text><text class="small" x="195" y="84">admin role</text>
+    <rect class="node" x="370" y="36" width="150" height="64" rx="8"/><text class="text" x="405" y="63">Users</text><text class="small" x="395" y="84">create/delete</text>
+    <rect class="node" x="590" y="36" width="150" height="64" rx="8"/><text class="text" x="635" y="63">Services</text><text class="small" x="615" y="84">organize scope</text>
+    <rect class="node" x="810" y="36" width="150" height="64" rx="8"/><text class="text" x="849" y="63">Documents</text><text class="small" x="841" y="84">review/delete</text>
+    <path class="line" d="M300 68H370M520 68H590M740 68H810"><animate attributeName="stroke-dashoffset" values="0;-44" dur="1.8s" repeatCount="indefinite"/></path>
+    <circle class="dot" r="6"><animateMotion dur="4.2s" repeatCount="indefinite" path="M300 68H370H590H810"/></circle>
+
+    <rect class="lane" x="0" y="210" width="1060" height="140" rx="8"/>
+    <text class="title" x="28" y="250">User</text>
+    <rect class="node2" x="170" y="246" width="130" height="64" rx="8"/><text class="text" x="218" y="273">Login</text><text class="small" x="197" y="294">user role</text>
+    <rect class="node" x="370" y="246" width="150" height="64" rx="8"/><text class="text" x="414" y="273">Upload</text><text class="small" x="395" y="294">add documents</text>
+    <rect class="node" x="590" y="246" width="150" height="64" rx="8"/><text class="text" x="634" y="273">Search</text><text class="small" x="615" y="294">query Solr index</text>
+    <rect class="node" x="810" y="246" width="150" height="64" rx="8"/><text class="text" x="835" y="273">View/Download</text><text class="small" x="846" y="294">decrypt stream</text>
+    <path class="line" d="M300 278H370M520 278H590M740 278H810"><animate attributeName="stroke-dashoffset" values="0;-44" dur="1.8s" repeatCount="indefinite"/></path>
+    <circle class="dot" r="6"><animateMotion dur="4.2s" begin="0.4s" repeatCount="indefinite" path="M300 278H370H590H810"/></circle>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Animated upload and indexing workflow</title>
+  <desc id="desc">Document upload workflow from file submission to extraction, encryption, database persistence, Solr indexing, and search readiness.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1e6f66"/></marker>
+    <style>
+      .bg{fill:#fbfaf6}.step{fill:#ffffff;stroke:#cddfdc;stroke-width:2}.head{font:700 22px Arial,Helvetica,sans-serif;fill:#113d3f}.label{font:700 16px Arial,Helvetica,sans-serif;fill:#113d3f}.small{font:400 12px Arial,Helvetica,sans-serif;fill:#526b69}.line{fill:none;stroke:#1e6f66;stroke-width:3;marker-end:url(#arrow);stroke-dasharray:12 13}.token{fill:#e1a83b}.accent{fill:#edf7f4;stroke:#91c9be;stroke-width:1.5}.icon{fill:#1e6f66}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="420"/>
+  <text x="58" y="58" class="head">Secure Upload and Indexing Flow</text>
+  <g transform="translate(62 118)">
+    <path class="line" d="M118 70 H238"><animate attributeName="stroke-dashoffset" values="0;-50" dur="1.4s" repeatCount="indefinite"/></path>
+    <path class="line" d="M358 70 H478"><animate attributeName="stroke-dashoffset" values="0;-50" dur="1.4s" repeatCount="indefinite"/></path>
+    <path class="line" d="M598 70 H718"><animate attributeName="stroke-dashoffset" values="0;-50" dur="1.4s" repeatCount="indefinite"/></path>
+    <path class="line" d="M838 70 H958"><animate attributeName="stroke-dashoffset" values="0;-50" dur="1.4s" repeatCount="indefinite"/></path>
+
+    <g>
+      <rect class="step" x="0" y="0" width="118" height="140" rx="8"/>
+      <path class="icon" d="M42 28h28l20 20v52H42z"/>
+      <path fill="#fff" d="M70 28v21h20z" opacity="0.9"/>
+      <text class="label" x="31" y="106">Upload</text>
+      <text class="small" x="19" y="126">file + metadata</text>
+    </g>
+    <g>
+      <rect class="step" x="240" y="0" width="118" height="140" rx="8"/>
+      <circle class="accent" cx="59" cy="51" r="27" transform="translate(240 0)"/>
+      <text class="label" x="280" y="106">Tika</text>
+      <text class="small" x="264" y="126">extract text</text>
+    </g>
+    <g>
+      <rect class="step" x="480" y="0" width="118" height="140" rx="8"/>
+      <rect class="icon" x="520" y="43" width="38" height="42" rx="7"/>
+      <path d="M527 43v-12c0-17 25-17 25 0v12" fill="none" stroke="#1e6f66" stroke-width="8" stroke-linecap="round"/>
+      <text class="label" x="506" y="106">Encrypt</text>
+      <text class="small" x="500" y="126">AES-256 file</text>
+    </g>
+    <g>
+      <rect class="step" x="720" y="0" width="118" height="140" rx="8"/>
+      <ellipse class="icon" cx="779" cy="39" rx="32" ry="13"/>
+      <rect class="icon" x="747" y="39" width="64" height="44"/>
+      <ellipse fill="#2b8177" cx="779" cy="83" rx="32" ry="13"/>
+      <text class="label" x="755" y="106">Persist</text>
+      <text class="small" x="749" y="126">MySQL + files</text>
+    </g>
+    <g>
+      <rect class="step" x="960" y="0" width="118" height="140" rx="8"/>
+      <circle cx="1019" cy="54" r="24" fill="none" stroke="#1e6f66" stroke-width="9"/>
+      <path d="M1036 72l24 24" stroke="#1e6f66" stroke-width="9" stroke-linecap="round"/>
+      <text class="label" x="993" y="106">Index</text>
+      <text class="small" x="988" y="126">Solr search</text>
+    </g>
+    <circle class="token" r="7"><animateMotion dur="4.5s" repeatCount="indefinite" path="M118 70 H238 H478 H718 H958"/></circle>
+  </g>
+</svg>
