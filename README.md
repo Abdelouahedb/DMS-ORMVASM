@@ -48,8 +48,6 @@ The screenshots below were extracted from the provided SFE report and saved in `
 
 ![Solr query interface](docs/screenshots/solr-query.png)
 
-![Solr indexed document details](docs/screenshots/solr-details.png)
-
 ## Tech Stack
 
 - Frontend: Next.js 15, React 19, Bootstrap 5, React Bootstrap, Bootstrap Icons, React Icons.
