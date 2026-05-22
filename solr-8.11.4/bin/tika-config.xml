@@ -1,0 +1,6 @@
+<properties>
+  <ocr>
+    <tesseractPath>C:/Program Files/Tesseract-OCR/tesseract.exe</tesseractPath> 
+    <enableImageProcessing>true</enableImageProcessing>
+  </ocr>
+</properties>

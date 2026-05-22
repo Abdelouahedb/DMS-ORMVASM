@@ -1,0 +1,356 @@
+/* --- Global Variables (Design System) --- */
+:root {
+  /* Colors */
+  --color-primary-500: #38b000; /* Main vibrant green */
+  --color-primary-700: #218838; /* Darker green for headings/hover */
+  --color-primary-100: #d8f3dc; /* Very light green for subtle accents */
+  --color-primary-50: #eaf8ee; /* Even lighter, near white green */
+
+  --color-success-background: #d1e7dd; /* Bootstrap success background */
+  --color-success-text: #0f5132; /* Bootstrap success text */
+  --color-success-border: #badbcc; /* Bootstrap success border */
+
+  --color-text-dark: #333333; /* Main body text color */
+  --color-text-light: #ffffff; /* For text on dark backgrounds */
+  --color-text-muted: #6c757d; /* Lighter text for secondary info */
+
+  --color-background-body: #eaffed; /* Light green-white background */
+  --color-background-card: #ffffff; /* White background for cards */
+  --color-border-light: #b7e4c7; /* Light green border */
+
+  /* Typography */
+  /* These variables link to the font definitions in _app.js */
+  --font-family-body: var(--font-roboto-regular);
+  --font-family-heading: var(--font-roboto-bold);
+
+  --font-size-base: 1rem; /* Base font size, typically 16px */
+  --line-height-base: 1.6;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+  /* Border Radii */
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 1rem; /* Consistent card border radius */
+  --border-radius-lg: 1.5rem;
+
+  /* Box Shadows */
+  --shadow-sm: 0 1px 3px rgba(33, 136, 56, 0.05);
+  --shadow-md: 0 4px 12px rgba(33, 136, 56, 0.08);
+  --shadow-lg: 0 8px 24px rgba(33, 136, 56, 0.12);
+
+  /* Transitions */
+  --transition-ease: all 0.3s ease-in-out;
+}
+
+/* --- Netflix & Spotify Fonts --- */
+:root {
+  --font-family-netflix: 'Bebas Neue', Arial, sans-serif;
+  --font-family-spotify: 'Lato', Arial, sans-serif;
+
+  /* Use Spotify font for body, Netflix font for headings */
+  --font-family-body: var(--font-family-spotify);
+  --font-family-heading: var(--font-family-netflix);
+
+  /* Colors */
+  --color-primary-500: #38b000; /* Main vibrant green */
+  --color-primary-700: #218838; /* Darker green for headings/hover */
+  --color-primary-100: #d8f3dc; /* Very light green for subtle accents */
+  --color-primary-50: #eaf8ee; /* Even lighter, near white green */
+
+  --color-success-background: #d1e7dd; /* Bootstrap success background */
+  --color-success-text: #0f5132; /* Bootstrap success text */
+  --color-success-border: #badbcc; /* Bootstrap success border */
+
+  --color-text-dark: #333333; /* Main body text color */
+  --color-text-light: #ffffff; /* For text on dark backgrounds */
+  --color-text-muted: #6c757d; /* Lighter text for secondary info */
+
+  --color-background-body: #eaffed; /* Light green-white background */
+  --color-background-card: #ffffff; /* White background for cards */
+  --color-border-light: #b7e4c7; /* Light green border */
+
+  /* Typography */
+  /* These variables link to the font definitions in _app.js */
+  --font-family-body: var(--font-roboto-regular);
+  --font-family-heading: var(--font-roboto-bold);
+
+  --font-size-base: 1rem; /* Base font size, typically 16px */
+  --line-height-base: 1.6;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+  /* Border Radii */
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 1rem; /* Consistent card border radius */
+  --border-radius-lg: 1.5rem;
+
+  /* Box Shadows */
+  --shadow-sm: 0 1px 3px rgba(33, 136, 56, 0.05);
+  --shadow-md: 0 4px 12px rgba(33, 136, 56, 0.08);
+  --shadow-lg: 0 8px 24px rgba(33, 136, 56, 0.12);
+
+  /* Transitions */
+  --transition-ease: all 0.3s ease-in-out;
+}
+
+/* --- Base Styles --- */
+html {
+  font-size: 16px; /* Define a base font size for rem units */
+  line-height: var(--line-height-base);
+  scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background-body);
+  font-family: var(--font-family-body);
+  color: var(--color-text-dark); /* Use a darker, more readable text color */
+  -webkit-font-smoothing: antialiased; /* Better font rendering */
+  -moz-osx-font-smoothing: grayscale; /* Better font rendering */
+}
+
+/* Ensure the main element occupies full width/height if needed for layout */
+main {
+  min-height: 100vh; /* Example: Ensures main content fills viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Typography --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  color: var(--color-primary-700); /* Darker green for headings */
+  font-weight: 700;
+  letter-spacing: -0.02em; /* Slightly tighter letter-spacing for modern look */
+  line-height: 1.2; /* Tighter line height for headings */
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+h1 { font-size: 2.5rem; } /* 40px */
+h2 { font-size: 2rem; }   /* 32px */
+h3 { font-size: 1.75rem; }/* 28px */
+h4 { font-size: 1.5rem; } /* 24px */
+h5 { font-size: 1.25rem; }/* 20px */
+h6 { font-size: 1rem; }   /* 16px */
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+a {
+  color: var(--color-primary-700);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--color-primary-500);
+  text-decoration: underline;
+}
+
+/* --- Component Styling --- */
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid var(--color-border-light);
+  background: #fff;
+}
+
+/* Cards */
+.card {
+  border-radius: 1.25rem !important; /* Consistent radius */
+  box-shadow: 0 2px 16px rgba(56,176,0,0.07);
+  border: none !important;
+  transition: var(--transition-ease); /* Smooth transitions */
+  padding: var(--spacing-md); /* Add some default padding to the card */
+  background-color: var(--color-background-card); /* Ensure white background for cards */
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg); /* More pronounced shadow on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: var(--color-primary-700);
+}
+
+/* Buttons */
+.btn { /* Target all Bootstrap buttons for consistent base */
+  border-radius: var(--border-radius-sm); /* Slightly smaller radius for buttons */
+  font-weight: 700;
+  padding: var(--spacing-sm) var(--spacing-md); /* Refined padding */
+  transition: var(--transition-ease);
+  cursor: pointer;
+  display: inline-flex; /* Align text vertically in case of icons */
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary,
+.btn-success {
+  background-color: var(--color-primary-500);
+  border-color: var(--color-primary-500);
+  color: var(--color-text-light); /* Ensure white text */
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+  background-color: var(--color-primary-700);
+  border-color: var(--color-primary-700);
+  box-shadow: var(--shadow-sm); /* Subtle shadow on hover */
+  transform: translateY(-1px); /* Slight lift */
+}
+
+.btn-primary:focus,
+.btn-success:focus {
+  outline: 2px solid var(--color-primary-100); /* Accessible focus indicator */
+  outline-offset: 2px;
+}
+
+.btn-info {
+  background: #eaf8ee;
+  color: #218838;
+  border: none;
+}
+
+.btn-info:hover {
+  background: #d8f3dc;
+  color: #38b000;
+}
+
+/* Tables */
+.table {
+  width: 100%;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-text-dark);
+  border-collapse: collapse; /* Ensure borders collapse cleanly */
+}
+
+.table th,
+.table td {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--color-border-light); /* Subtle border */
+  text-align: left;
+}
+
+.table th {
+  font-family: var(--font-family-heading);
+  background-color: var(--color-primary-50); /* Very light green header background */
+  color: var(--color-primary-700);
+  font-weight: 700;
+}
+
+/* Stripe and hover effect for tables */
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: var(--color-primary-50); /* Light stripe for odd rows */
+}
+
+.table-striped > tbody > tr:hover {
+  background-color: #eaf8ee !important;
+  transition: background 0.2s;
+}
+
+/* Alerts */
+.alert-success {
+  background-color: var(--color-success-background);
+  color: var(--color-success-text);
+  border-color: var(--color-success-border);
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  font-family: var(--font-family-body); /* Ensure correct font */
+  font-weight: 400;
+}
+
+/* --- Login Page Specific Styles --- */
+
+.login-page-wrapper {
+  background: linear-gradient(135deg, var(--color-background-body), var(--color-primary-50)); /* Subtle gradient background */
+  display: flex; /* Ensure it centers content */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: var(--spacing-xl) 0; /* Add vertical padding */
+}
+
+.login-card {
+  max-width: 450px; /* Limit card width for better aesthetics */
+  width: 100%; /* Make it responsive */
+  border: none; /* Remove default card border if you want a cleaner look */
+  box-shadow: var(--shadow-lg); /* Stronger shadow for the main element */
+  background-color: var(--color-background-card); /* White background for the card */
+  padding: var(--spacing-xl) !important; /* Override default padding for larger card padding */
+}
+
+.login-title {
+  color: var(--color-primary-700);
+  font-size: 2.2rem; /* Slightly larger title */
+  margin-bottom: var(--spacing-sm);
+  font-weight: 700;
+}
+
+/* Form control enhancements */
+.form-control-lg {
+  height: calc(3.5rem + 2px); /* Larger input fields */
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--color-border-light);
+  font-size: var(--font-size-base);
+}
+
+.form-control-lg::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.7;
+}
+
+.form-control-lg:focus {
+  border-color: var(--color-primary-500);
+  box-shadow: 0 0 0 0.25rem rgba(var(--color-primary-500-rgb), 0.25); /* Focus ring using primary color */
+}
+
+/* Button enhancements */
+.btn-lg {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-size: 1.1rem;
+  border-radius: var(--border-radius-sm);
+  font-weight: 700;
+}
+
+/* Alert styling for errors */
+.alert-danger {
+  background-color: #f8d7da; /* Light red */
+  color: #721c24; /* Dark red text */
+  border-color: #f5c6cb; /* Red border */
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  font-size: 0.95rem;
+}
+
+/* Optional: Make the alert fade in/out if you add a state for it */
+.alert.fade.show {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid var(--color-border-light);
+  background: #fff;
+  box-shadow: 0 -2px 16px rgba(56,176,0,0.07);
+}

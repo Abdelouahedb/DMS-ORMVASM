@@ -39,3 +39,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# example env is safe to commit
+!.env.example
+
+# local document storage
+/uploads/
+
+# local browser/screenshot scratch profiles
+/.tmp-edge-*/
+
+# solr runtime data and logs
+/solr-8.11.4/server/logs/
+/solr-8.11.4/server/tmp/
+/solr-8.11.4/server/solr/*/data/
