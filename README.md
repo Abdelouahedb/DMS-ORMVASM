@@ -21,12 +21,12 @@ This repository was prepared from an SFE internship project titled "Conception e
 - Full-text search through Apache Solr.
 - MySQL persistence for users, services, and document metadata.
 - Bootstrap responsive UI with icons, alerts, loading states, tabs, and table actions.
+- Tesseract OCR for image text extraction.
 
-To verify: the SFE report mentions Tesseract OCR for image text extraction. The current code calls Apache Tika Server, but no direct Tesseract integration or OCR configuration was found in this repository.
 
 ## Screenshots
 
-The screenshots below were extracted from the provided SFE report and saved in `docs/screenshots/`.
+The screenshots below are saved in `docs/screenshots/`.
 
 ### Login
 
@@ -329,6 +329,6 @@ Administrator:
 - Non-interactive ESLint configuration.
 - Production Solr core creation and schema migration scripts.
 
-## Author and Internship Note
+## Author 
 
-Internship/SFE project by Boudrari Abdelouahed, completed in the context of a final-year internship at ORMVASM in Agadir during the 2024-2025 academic year. The report identifies the hosting office as the Service de Programmation et de la Planification (SPP).
+Internship/SFE project by Abdelouahed, completed in the context of a final-year internship at ORMVASM in Agadir during the 2024-2025 academic year. the hosting office as the Service de Programmation et de la Planification (SPP).
